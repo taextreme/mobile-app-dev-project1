@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           BaseCard(
-            theColor: Colors.red,
+            theColor: Colors.red.shade800,
             theChild: const Align(
               alignment: Alignment.center,
               child: Text(
