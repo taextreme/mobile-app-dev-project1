@@ -1,4 +1,4 @@
-final policeNumbers = {
+const policeNumbers = {
   "General Police": "191",
   "Tourist Police": "1155",
   "Car Theft Suppression Police": "1192",

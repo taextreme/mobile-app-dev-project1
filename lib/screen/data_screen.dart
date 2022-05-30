@@ -20,8 +20,15 @@ class DataScreen extends StatelessWidget {
         children: dataMap.entries.map((entry) {
           var w = BaseCard(
               theColor: cardColor,
-              theChild: Column(
-                  children: <Widget>[Text(entry.key), Text(entry.value)]));
+              theChild: Column(children: <Widget>[
+                const SizedBox(
+                  height: 30.0,
+                ),
+                Text(entry.key,
+                    style:
+                        TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+                Text(entry.value, style: TextStyle(fontSize: 26))
+              ]));
           return w;
         }).toList(),
       ),
