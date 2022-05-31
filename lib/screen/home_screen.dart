@@ -1,6 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:mobile_app_dev_project1/data/numbers_data.dart';
+import 'package:mobile_app_dev_project1/screen/data_screen.dart';
 
 import '../component/base_card.dart';
 
@@ -33,6 +35,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             theOnTapFunc: () {
               log("Call the Police!!!");
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const DataScreen(
+                    name: "Police Numbers",
+                    dataMap: policeNumbers,
+                    cardColor: Colors.brown);
+              }));
             },
           ),
           BaseCard(
@@ -47,6 +55,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Traffic!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Travelling Support Numbers",
+                      dataMap: travelNumbers,
+                      cardColor: Colors.orange);
+                }));
               }),
           BaseCard(
             theColor: Colors.lightGreen,
@@ -60,6 +74,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             theOnTapFunc: () {
               log("Covid Covid!!!!");
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const DataScreen(
+                    name: "Pandemic Support Numbers",
+                    dataMap: pandemicNumbers,
+                    cardColor: Colors.lightGreen);
+              }));
             },
           ),
           BaseCard(
@@ -74,6 +94,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Ambulance!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Medical Emergency Numbers",
+                      dataMap: medicalNumbers,
+                      cardColor: Colors.grey);
+                }));
               }),
           BaseCard(
               theColor: Colors.red,
@@ -87,6 +113,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Disaster!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Disaster Control Numbers",
+                      dataMap: disasterNumbers,
+                      cardColor: Colors.red);
+                }));
               }),
           BaseCard(
               theColor: Colors.yellow,
@@ -100,6 +132,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Public Utilities!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Public Utilities Numbers",
+                      dataMap: publicUtilitiesNumbers,
+                      cardColor: Colors.yellow);
+                }));
               }),
           BaseCard(
               theColor: Colors.blue,
@@ -113,6 +151,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Coastguard!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Coastal & Maritime Numbers",
+                      dataMap: coastalNumbers,
+                      cardColor: Colors.blue);
+                }));
               }),
           BaseCard(
               theColor: Colors.teal,
@@ -126,6 +170,12 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               theOnTapFunc: () {
                 log("Radio!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Emergency Radio Numbers",
+                      dataMap: radioNumbers,
+                      cardColor: Colors.teal);
+                }));
               })
         ],
       ),
