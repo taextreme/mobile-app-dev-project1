@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
               theChild: const Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'Traffic Officers',
+                  'Travelling Emergency',
                   style: TextStyle(fontSize: 24),
                   textAlign: TextAlign.center,
                 ),
@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
               theChild: const Align(
                 alignment: Alignment.center,
                 child: Text(
-                  'Coastguard',
+                  'Coastal & Maritime Emergency',
                   style: TextStyle(fontSize: 24),
                   textAlign: TextAlign.center,
                 ),
