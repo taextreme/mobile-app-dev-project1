@@ -36,20 +36,6 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           BaseCard(
-            theColor: Colors.red.shade800,
-            theChild: const Align(
-              alignment: Alignment.center,
-              child: Text(
-                'Fire',
-                style: TextStyle(fontSize: 24),
-                textAlign: TextAlign.center,
-              ),
-            ),
-            theOnTapFunc: () {
-              log("Fire Fire!!!!");
-            },
-          ),
-          BaseCard(
               theColor: Colors.orange,
               theChild: const Align(
                 alignment: Alignment.center,
@@ -62,6 +48,20 @@ class _HomeScreenState extends State<HomeScreen> {
               theOnTapFunc: () {
                 log("Traffic!!!!");
               }),
+          BaseCard(
+            theColor: Colors.lightGreen,
+            theChild: const Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Covid-19 Pandemic Support',
+                style: TextStyle(fontSize: 24),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            theOnTapFunc: () {
+              log("Covid Covid!!!!");
+            },
+          ),
           BaseCard(
               theColor: Colors.grey,
               theChild: const Align(
@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 log("Ambulance!!!!");
               }),
           BaseCard(
-              theColor: Colors.lightGreen,
+              theColor: Colors.red,
               theChild: const Align(
                 alignment: Alignment.center,
                 child: Text(
