@@ -25,9 +25,9 @@ class DataScreen extends StatelessWidget {
                   height: 30.0,
                 ),
                 Text(entry.key,
-                    style:
-                        TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
-                Text(entry.value, style: TextStyle(fontSize: 26))
+                    style: const TextStyle(
+                        fontSize: 26, fontWeight: FontWeight.bold)),
+                Text(entry.value, style: const TextStyle(fontSize: 26))
               ]));
           return w;
         }).toList(),
