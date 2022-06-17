@@ -54,7 +54,10 @@ class _PersonalDataScreenState extends State<PersonalDataScreen> {
           // Add your onPressed code here!
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return const DataEntryScreen();
-          }));
+          })).then((_) => setState(() {
+                String encodeData = UserSimplePreferences.getUserdata();
+                userData = json.decode(encodeData);
+              }));
         },
         backgroundColor: Colors.green,
         child: const Icon(Icons.add),
