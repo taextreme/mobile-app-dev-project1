@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 }));
               }),
           BaseCard(
-              theColor: Colors.purple,
+              theColor: Colors.purple.shade300,
               theChild: const Align(
                 alignment: Alignment.center,
                 child: Text(
@@ -189,10 +189,10 @@ class _HomeScreenState extends State<HomeScreen> {
               theOnTapFunc: () {
                 log("Bank!!!!");
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const DataScreen(
+                  return DataScreen(
                       name: "Financial Emergency Numbers",
                       dataMap: financialNumbers,
-                      cardColor: Colors.purple);
+                      cardColor: Colors.purple.shade300);
                 }));
               }),
           BaseCard(
