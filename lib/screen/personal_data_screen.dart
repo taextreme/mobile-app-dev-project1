@@ -41,10 +41,10 @@ class _PersonalDataScreenState extends State<PersonalDataScreen> {
                 const SizedBox(
                   height: 30.0,
                 ),
-                Text(entry.key,
+                Text(entry.key, style: const TextStyle(fontSize: 20)),
+                Text(entry.value,
                     style: const TextStyle(
-                        fontSize: 26, fontWeight: FontWeight.bold)),
-                Text(entry.value, style: const TextStyle(fontSize: 26))
+                        fontSize: 26, fontWeight: FontWeight.bold))
               ]));
           return w;
         }).toList(),
