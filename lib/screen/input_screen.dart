@@ -58,7 +58,7 @@ class _DataEntryScreenState extends State<DataEntryScreen> {
             ),
             TextFormField(
                 decoration: const InputDecoration(
-                  labelText: 'Numbers',
+                  labelText: 'Number',
                   filled: true,
                   isDense: true,
                 ),
@@ -89,8 +89,8 @@ class _DataEntryScreenState extends State<DataEntryScreen> {
                 bool isValid = _formKey.currentState!.validate();
                 if (isValid) {
                   _formKey.currentState!.save();
+                  addNewData(name, number);
                 }
-                addNewData(name, number);
               },
               child: const Text('Submit'),
             ),
