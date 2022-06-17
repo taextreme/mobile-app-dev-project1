@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dev_project1/screen/home_screen.dart';
 
-void main() {
+import 'data/user_data.dart';
+
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await UserSimplePreferences.init();
   runApp(const MyApp());
 }
 
