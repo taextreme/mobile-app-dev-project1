@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dev_project1/data/numbers_data.dart';
 import 'package:mobile_app_dev_project1/screen/data_screen.dart';
+import 'package:mobile_app_dev_project1/screen/personal_data_screen.dart';
 
 import '../component/base_card.dart';
 
@@ -23,6 +24,23 @@ class _HomeScreenState extends State<HomeScreen> {
       body: GridView.count(
         crossAxisCount: 2,
         children: <BaseCard>[
+          BaseCard(
+            theColor: Colors.green,
+            theChild: const Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Personal Emergency Number',
+                style: TextStyle(fontSize: 24),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            theOnTapFunc: () {
+              log("Personal Number");
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const PersonalDataScreen();
+              }));
+            },
+          ),
           BaseCard(
             theColor: Colors.brown,
             theChild: const Align(
