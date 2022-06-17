@@ -34,6 +34,12 @@ class _DataScreenState extends State<DataScreen> {
     });
   }
 
+  void onClose() {
+    setState(() {
+      data = widget.dataMap;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -41,6 +47,7 @@ class _DataScreenState extends State<DataScreen> {
         inBar: false,
         setState: setState,
         onSubmitted: onSubmitted,
+        onClosed: onClose,
         buildDefaultAppBar: buildAppBar);
     data = widget.dataMap;
   }
@@ -75,7 +82,7 @@ class _DataScreenState extends State<DataScreen> {
     }
     Map<String, String> result = {};
     widget.dataMap.forEach((key, value) {
-      if (key.contains(input)) {
+      if (key.toLowerCase().contains(input.toLowerCase())) {
         result[key] = value;
       }
     });
