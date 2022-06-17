@@ -64,3 +64,19 @@ const Map<String, String> radioNumbers = {
   "FM91 Police Department Radio": "1644",
   "Public Volunteers Radio": "1677"
 };
+
+const Map<String, String> financialNumbers = {
+  "Government Savings Bank": "1115, 02-299-8000",
+  "SME Development Bank": "1357, 02-265-3000",
+  "Bangkok Bank Pub Co., Ltd.": "1333, 02-645-5555",
+  "Krungthai Bank Pub Co., Ltd.": "1551",
+  "Bank of Ayudhya Pub Co., Ltd.": "1572",
+  "Thai Military Bank Pub Co., Ltd.": "1558",
+  "Citibank Thailand": "1588",
+  "Thanachart Bank Pub Co., Ltd.": "1770",
+  "Kasikornbank Pub Co., Ltd.": "02-888-8888",
+  "CIMB Thai Bank Pub Co., Ltd.": "02-626-7777",
+  "The Siam Commercial Bank Pub Co., Ltd.": "02-777-7777",
+  "Government Housing Bank": "02-645-9000",
+  "UOB Bank Pub Co., Ltd.": "02-285-1555"
+};

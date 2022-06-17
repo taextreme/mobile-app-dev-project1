@@ -177,6 +177,25 @@ class _HomeScreenState extends State<HomeScreen> {
                 }));
               }),
           BaseCard(
+              theColor: Colors.purple,
+              theChild: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  'Financial Emergency',
+                  style: TextStyle(fontSize: 24),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              theOnTapFunc: () {
+                log("Bank!!!!");
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const DataScreen(
+                      name: "Financial Emergency Numbers",
+                      dataMap: financialNumbers,
+                      cardColor: Colors.purple);
+                }));
+              }),
+          BaseCard(
               theColor: Colors.teal,
               theChild: const Align(
                 alignment: Alignment.center,
